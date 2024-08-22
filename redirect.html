@@ -1,0 +1,17 @@
+<!-- redirect.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        var link = window.location.search.split('=')[1];
+        window.location.href = "priority://priform#" + link;
+    </script>
+</head>
+<body>
+    <p>If you are not redirected, <a id="link" href="#">click here</a>.</p>
+    <script type="text/javascript">
+        document.getElementById('link').href = "priority://priform#" + link;
+    </script>
+</body>
+</html>
